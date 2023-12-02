@@ -4,4 +4,4 @@ from sys import stdin
 
 #print(sum((d:=findall(r'\d', s)) and int(d[0]+d[-1]) for s in stdin.readlines()))
 
-print(sum((t:='one two three four five six seven eight nine'.split()) and (r:='|'.join(t)) and int(''.join(x if len(x)==1 else str(t.index(x)+1) for x in [search(r'\d|'+r, s)[0], search(r'\d|'+r[::-1], s[::-1])[0][::-1]])) for s in stdin.readlines()))
+print(sum((r:='one|two|three|four|five|six|seven|eight|nine|1|2|3|4|5|6|7|8|9') and int(''.join(str(r.split('|').index(search(x,s)[1])%9+1) for x in ['(%s)'%r, '.*(%s)'%r])) for s in stdin.readlines()))
