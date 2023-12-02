@@ -8,4 +8,4 @@ from re import findall
 
 #print(sum(i+1 for i, s in enumerate(open(0)) if all(Counter({w:int(n) for n,w in findall(r'(\d+) (\w+)',c)})<=Counter(red=12,green=13,blue=14) for c in s.split(';'))))
 
-print(sum(prod(reduce(or_,(Counter({w:int(n) for n,w in findall(r'(\d+) (\w+)',c)}) for c in s.split(';'))).values()) for s in open(0)))
+print(sum(prod(reduce(or_,(Counter({w:int(n)}) for n,w in findall(r'(\d+) (\w+)',s))).values()) for s in open(0)))
