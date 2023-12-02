@@ -1,3 +1,5 @@
+# With improvements from https://www.reddit.com/user/4HbQ/
+
 from collections import Counter
 from functools import reduce
 from math import prod
