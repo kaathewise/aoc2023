@@ -1,7 +1,7 @@
 from itertools import groupby
 from math import prod
 from operator import itemgetter
-from re import finditer,search
+from re import finditer
 
 #(f:=open(0).read()) and (N:=f.find('\n')+1) and (s:='.'*N+f+'.'*N) and print(sum(int(x[0]) for x in finditer(r'\d+',s) if any(search(r'[^0-9.\n]',s[i+x.start()-1:i+x.end()+1]) for i in [-N,0,N])))
 
