@@ -1,6 +1,6 @@
 # AOC 2023 Python one-liners
 
-Python one-liners for https://adventofcode.com/2023.
+Python one-liners for https://adventofcode.com/2023. Some people object to calling them one-liners, as they are more like "single-expressions", but whatever.
 
 See a similar repo for AOC 2022 [here](https://github.com/kaathewise/aoc2022).
 
